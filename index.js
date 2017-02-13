@@ -61,7 +61,7 @@ function resolve(promise, x) {
             reject(promise, x._reason)    
         }
     }
-    else if (typeof x == 'Object' || typeof x == 'function') {
+    else if (typeof x == 'object' || typeof x == 'function') {
         var then = x.then;
         if (typeof then == 'function') {
             var called = false;
